@@ -4,6 +4,7 @@ import os
 import pandas as pd
 sys.path.append("."+os.sep+'Log')
 from xmalplus.Log.log import Log
+from xmalplus.utils.path import PACKAGE_ROOT
 
 class GetFeature:
 	"""init params"""
@@ -15,8 +16,8 @@ class GetFeature:
 		:return:
 		"""
 		self.logger=Log(self)
-		self.APIFile = "."+os.sep+"Feature"+os.sep+"API.txt"
-		self.permissionFile = "."+os.sep+"Feature"+os.sep+"permission.txt"
+		self.APIFile = PACKAGE_ROOT / "Feature" / "API.txt"
+		self.permissionFile = PACKAGE_ROOT / "Feature" / "permission.txt"
 		self.featurelist = list()
 		
 	def featureFromFile(self,filePath):

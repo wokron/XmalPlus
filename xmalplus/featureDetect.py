@@ -5,12 +5,13 @@ from torch.utils.data import DataLoader
 import numpy as np
 from xmalplus.configs import configs
 from xmalplus.Model.Model import Model
+from xmalplus.utils.path import PACKAGE_ROOT
 
 
 class FeatureDetector:
     def __init__(self):
         self.model = Model().to(configs.device)
-        self.featurePath = r"./FeatureEmbedding/feature/feature2semantics.txt"
+        self.featurePath = PACKAGE_ROOT / "FeatureEmbedding/feature/feature2semantics.txt"
         self.featureList = []
         with open(self.featurePath, 'r', encoding='utf-8') as file:
             for line in file:
@@ -19,8 +20,8 @@ class FeatureDetector:
                     self.featureList.append(parts[0])
         self.cureFeatures = []
         self.cureAssistance = []
-        self.standardDistribution = np.load(r"distribution/standardDistribution.npy")
-        self.model_path = r"./modelParam/model_epoch_10.pth"
+        self.standardDistribution = np.load(PACKAGE_ROOT / "distribution/standardDistribution.npy")
+        self.model_path = PACKAGE_ROOT / "modelParam/model_epoch_10.pth"
 
     def load_model(self):
         self.model.load_state_dict(torch.load(self.model_path))

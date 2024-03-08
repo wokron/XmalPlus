@@ -4,12 +4,14 @@ from xmalplus.FeatureEmbedding.embeddingProcesss import EmbeddingProcess
 from xmalplus.configs import configs
 import numpy as np
 
+from xmalplus.utils.path import PACKAGE_ROOT
+
 
 class Exp:
     def __init__(self):
         self.featureExtractor = FeatureExtractor()
         self.featureDetector = FeatureDetector()
-        self.Adapter = EmbeddingProcess(r"./FeatureEmbedding/embedding")
+        self.Adapter = EmbeddingProcess(PACKAGE_ROOT / "FeatureEmbedding/embedding")
         self.Adapter.process()
 
     def main(self, Datapath, Apk):
