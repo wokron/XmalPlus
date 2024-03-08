@@ -1,0 +1,8 @@
+pandas
+scikit-learn
+torchvision
+numpy
+matplotlib
+reformer_pytorch
+seaborn
+androguard==3.3.5

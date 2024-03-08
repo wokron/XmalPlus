@@ -1,0 +1,159 @@
+,name,semantic
+0,Ljava/net/URL;->openConnection,Establish a connection to a URL
+1,Ljava/net/URL;->openStream,Open a stream for URL data
+2,Ljava/net/URL;->getContent,Retrieve content from a URL
+3,Landroid/telephony/TelephonyManager;->getCallState,Get current call state
+4,Landroid/telephony/TelephonyManager;->getCellLocation,Locate cell tower position
+5,Landroid/telephony/TelephonyManager;->getDeviceId,Obtain device identification number
+6,Landroid/telephony/TelephonyManager;->getDeviceSoftwareVersion,Get device software version
+7,Landroid/telephony/TelephonyManager;->getNeighboringCellInfo,Info on nearby cell towers
+8,Landroid/telephony/TelephonyManager;->getNetworkCountryIso,Get network country ISO code
+9,Landroid/telephony/TelephonyManager;->getNetworkOperator,Identify network operator code
+10,Landroid/telephony/TelephonyManager;->getNetworkOperatorName,Name of network operator
+11,Landroid/telephony/TelephonyManager;->getNetworkType,Determine network type
+12,Landroid/telephony/TelephonyManager;->getPhoneType,Identify phone type
+13,Landroid/telephony/TelephonyManager;->getSimCountryIso,Get SIM country ISO code
+14,Landroid/telephony/TelephonyManager;->getSimOperator,Identify SIM operator code
+15,Landroid/telephony/TelephonyManager;->getSimOperatorName,Name of SIM operator
+16,Landroid/telephony/TelephonyManager;->getSimSerialNumber,Retrieve SIM serial number
+17,Landroid/telephony/TelephonyManager;->getSimState,Determine SIM state
+18,Landroid/telephony/TelephonyManager;->getSubscriberId,Obtain subscriber identification
+19,Landroid/telephony/TelephonyManager;->getVoiceMailNumber,Get voicemail number
+20,Landroid/telephony/TelephonyManager;->hasIccCard,Check for ICC card presence
+21,Landroid/telephony/TelephonyManager;->isNetworkRoaming,Detect network roaming status
+22,Landroid/telephony/gsm/SmsManager;->divideMessage,Split message into segments
+23,Landroid/telephony/gsm/SmsManager;->getDefault,Get default SMS manager
+24,Landroid/telephony/gsm/SmsManager;->sendDataMessage,Send data via SMS
+25,Landroid/telephony/gsm/SmsManager;->sendMultipartTextMessage,Send multipart text SMS
+26,Landroid/telephony/gsm/SmsManager;->sendTextMessage,Send text message SMS
+27,Ljava/net/HttpURLConnection;->disconnect,Terminate HTTP connection
+28,Ljava/net/HttpURLConnection;->getContentEncoding,Get HTTP content encoding
+29,Ljava/net/HttpURLConnection;->getPermission,Retrieve HTTP connection permissions
+30,Ljava/net/HttpURLConnection;->getRequestMethod,Get HTTP request method
+31,Ljava/net/HttpURLConnection;->getResponseCode,Retrieve HTTP response code
+32,Ljava/net/HttpURLConnection;->getResponseMessage,Get HTTP response message
+33,Ljava/net/HttpURLConnection;->usingProxy,Check if using a proxy
+34,Landroid/content/ContentResolver;->bulkInsert,Insert multiple records into content provider
+35,Landroid/content/ContentResolver;->getType,Determine content type of Uri
+36,Landroid/content/ContentResolver;->openAssetFileDescriptor,Access file descriptor for asset
+37,Landroid/content/ContentResolver;->query,Query content provider
+38,Landroid/content/ContentResolver;->registerContentObserver,Monitor changes in content Uri
+39,Landroid/content/ContentResolver;->update,Update content provider data
+40,Landroid/content/ContentResolver;->delete,Delete from content provider
+41,Ljava/lang/Runtime;->getRuntime,Access runtime instance
+42,Ljava/lang/Runtime;->exec,Execute system command
+43,Ljava/lang/Runtime;->addShutdownHook,Add hook for shutdown sequence
+44,Ljava/lang/Runtime;->maxMemory,Get maximum memory limit
+45,Ljava/net/URLConnection;->addRequestProperty,Add request property to connection
+46,Ljava/net/URLConnection;->connect,Establish connection
+47,Ljava/net/URLConnection;->getConnectTimeout,Get connection timeout duration
+48,Ljava/net/URLConnection;->getContent,Retrieve content from connection
+49,Ljava/net/URLConnection;->getContentType,Determine content type
+50,Ljava/net/URLConnection;->getDefaultUseCaches,Check default cache usage
+51,Ljava/net/URLConnection;->getPermission,Retrieve connection permissions
+52,Ljava/net/URLConnection;->getURL,Get URL of connection
+53,Ljava/net/URLConnection;->setConnectTimeout,Set connection timeout
+54,Ljava/net/URLConnection;->setReadTimeout,Set read timeout
+55,Landroid/app/ActivityManager;->getLargeMemoryClass,Get large memory class for device
+56,Landroid/app/ActivityManager;->getRunningAppProcesses,List running app processes
+57,Landroid/app/ActivityManager;->isLowRamDevice,Check if device has low RAM
+58,Landroid/app/ActivityManager;->killBackgroundProcesses,Kill background app processes
+59,Landroid/app/ActivityManager;->restartPackage,Restart app package
+60,Landroid/bluetooth/BluetoothAdapter;->cancelDiscovery,Cancel Bluetooth discovery
+61,Landroid/bluetooth/BluetoothAdapter;->getAddress,Get Bluetooth device address
+62,Landroid/bluetooth/BluetoothAdapter;->getBondedDevices,List bonded Bluetooth devices
+63,Landroid/bluetooth/BluetoothAdapter;->getRemoteDevice,Access a remote Bluetooth device
+64,Landroid/bluetooth/BluetoothAdapter;->connect,"Connect to Bluetooth device (imprecise, may not exist as described)"
+65,Landroid/app/DownloadManager;->enqueue,Enqueue file for download
+66,Landroid/app/DownloadManager;->query,Query download manager
+67,Landroid/location/LocationManager;->addGpsStatusListener,Add GPS status listener
+68,Landroid/location/LocationManager;->addNmeaListener,Add NMEA listener
+69,Landroid/location/LocationManager;->addProximityAlert,Add proximity alert
+70,Landroid/location/LocationManager;->addTestProvider,Add test location provider
+71,Landroid/location/LocationManager;->clearTestProviderLocation,Clear test provider location
+72,Landroid/location/LocationManager;->getBestProvider,Get best location provider
+73,Landroid/location/LocationManager;->getGpsStatus,Retrieve GPS status
+74,Landroid/location/LocationManager;->getLastKnownLocation,Get last known location
+75,Landroid/location/LocationManager;->requestLocationUpdates,Request location updates
+76,Landroid/location/LocationManager;->sendExtraCommand,Send command to location provider
+77,Landroid/net/wifi/WifiManager;->addNetwork,Add Wi-Fi network
+78,Landroid/net/wifi/WifiManager;->calculateSignalLevel,Calculate Wi-Fi signal level
+79,Landroid/net/wifi/WifiManager;->createWifiLock,Create Wi-Fi lock to prevent sleep
+80,Landroid/net/wifi/WifiManager;->disconnect,Disconnect from current Wi-Fi
+81,Landroid/net/wifi/WifiManager;->enableNetwork,Enable or disable a Wi-Fi network
+82,Landroid/net/wifi/WifiManager;->getConfiguredNetworks,List configured Wi-Fi networks
+83,Landroid/net/wifi/WifiManager;->getConnectionInfo,Get current Wi-Fi connection info
+84,Landroid/net/wifi/WifiManager;->getDhcpInfo,Retrieve DHCP info for Wi-Fi network
+85,Landroid/net/wifi/WifiManager;->getScanResults,Get results of latest Wi-Fi scan
+86,Landroid/net/wifi/WifiManager;->getWifiState,Check current Wi-Fi state
+87,Landroid/net/wifi/WifiManager;->isWifiEnabled,Check if Wi-Fi is enabled
+88,Landroid/net/wifi/WifiManager;->removeNetwork,Remove a Wi-Fi network
+89,Landroid/net/wifi/WifiManager;->saveConfiguration,Save Wi-Fi configuration changes
+90,Landroid/net/wifi/WifiManager;->setWifiEnabled,Enable or disable Wi-Fi
+91,Landroid/app/NotificationManager;->cancel,Cancel a notification
+92,Landroid/app/NotificationManager;->notify,Post a notification
+93,Landroid/content/pm/PackageManager;->checkPermission,Check app permissions
+94,Landroid/os/PowerManager;->isInteractive,Check if device is interactive
+95,Landroid/os/PowerManager;->isScreenOn,Check if screen is on (deprecated)
+96,Landroid/os/PowerManager;->newWakeLock,Create a wake lock to prevent sleep
+97,android.permission.ACCESS_COARSE_LOCATION,Access approximate location.
+98,android.permission.ACCESS_FINE_LOCATION,Access precise location.
+99,android.permission.ACCESS_LOCATION_EXTRA_COMMANDS,Extra location provider commands.
+100,android.permission.ACCESS_NETWORK_STATE,View network connections.
+101,android.permission.ACCESS_WIFI_STATE,View Wi-Fi connections.
+102,android.permission.AUTHENTICATE_ACCOUNTS,Act as an account authenticator.
+103,android.permission.BATTERY_STATS,Collect battery statistics.
+104,android.permission.BLUETOOTH,Connect to Bluetooth devices.
+105,android.permission.BROADCAST_SMS,Send SMS broadcast.
+106,android.permission.BROADCAST_STICKY,Make sticky broadcasts.
+107,android.permission.CALL_PHONE,Make phone calls.
+108,android.permission.CAMERA,Take pictures and videos.
+109,android.permission.CHANGE_COMPONENT_ENABLED_STATE,Enable or disable app components.
+110,android.permission.CHANGE_CONFIGURATION,Change system configuration.
+111,android.permission.CHANGE_NETWORK_STATE,Change network connectivity.
+112,android.permission.CHANGE_WIFI_MULTICAST_STATE,Allow Wi-Fi multicast reception.
+113,android.permission.CHANGE_WIFI_STATE,Change Wi-Fi connectivity.
+114,android.permission.CLEAR_APP_CACHE,Clear app cache.
+115,android.permission.CONTROL_LOCATION_UPDATES,Control location update notifications.
+116,android.permission.DELETE_CACHE_FILES,Delete cache files.
+117,android.permission.DELETE_PACKAGES,Delete apps.
+118,android.permission.DEVICE_POWER,Power device on or off.
+119,android.permission.DISABLE_KEYGUARD,Disable lock screen.
+120,android.permission.EXPAND_STATUS_BAR,Expand or collapse status bar.
+121,android.permission.FLASHLIGHT,Use flashlight.
+122,android.permission.GET_PACKAGE_SIZE,Get app size.
+123,android.permission.GET_TASKS,Retrieve running apps.
+124,android.permission.INSTALL_PACKAGES,Install applications.
+125,android.permission.INTERNET,Full internet access.
+126,android.permission.KILL_BACKGROUND_PROCESSES,Kill background processes.
+127,android.permission.MODIFY_PHONE_STATE,Modify phone status.
+128,android.permission.MOUNT_UNMOUNT_FILESYSTEMS,Mount or unmount file systems.
+129,android.permission.NFC,Perform NFC transactions.
+130,android.permission.PERSISTENT_ACTIVITY,Make app persistent.
+131,android.permission.PROCESS_OUTGOING_CALLS,Intercept outgoing calls.
+132,android.permission.READ_CALL_LOG,Read call log.
+133,android.permission.READ_CONTACTS,Read contacts.
+134,android.permission.READ_EXTERNAL_STORAGE,Read external storage.
+135,android.permission.READ_LOGS,Read system log files.
+136,android.permission.READ_PHONE_STATE,Access phone state.
+137,android.permission.READ_PROFILE,Access user profile.
+138,android.permission.READ_SMS,Read SMS messages.
+139,android.permission.RECEIVE_BOOT_COMPLETED,Receive boot completed notification.
+140,android.permission.RECEIVE_MMS,Receive MMS messages.
+141,android.permission.RECEIVE_SMS,Receive SMS messages.
+142,android.permission.RECEIVE_WAP_PUSH,Receive WAP push messages.
+143,android.permission.RECORD_AUDIO,Record audio.
+144,android.permission.RESTART_PACKAGES,Restart other applications.
+145,android.permission.SEND_SMS,Send SMS messages.
+146,android.permission.SET_WALLPAPER,Set wallpaper.
+147,android.permission.SET_WALLPAPER_HINTS,Set wallpaper size hints.
+148,android.permission.STATUS_BAR,Interact with status bar.
+149,android.permission.SYSTEM_ALERT_WINDOW,Display system-level alerts.
+150,android.permission.UPDATE_DEVICE_STATS,Update device statistics.
+151,android.permission.USE_CREDENTIALS,Use accounts on the device.
+152,android.permission.VIBRATE,Control vibration.
+153,android.permission.WAKE_LOCK,Prevent phone from sleeping.
+154,android.permission.WRITE_APN_SETTINGS,Write APN settings.
+155,android.permission.WRITE_SETTINGS,Modify system settings.
+156,android.permission.WRITE_SMS,Write SMS messages.
+157,android.permission.WRITE_EXTERNAL_STORAGE,Write to external storage.
