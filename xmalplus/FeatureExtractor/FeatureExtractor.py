@@ -1,5 +1,5 @@
-from FeatureExtractor.FeatureExtraction import FeatureExtraction
-from FeatureExtractor.GetFeatureMatrix import GetFeatureMatrix
+from xmalplus.FeatureExtractor.FeatureExtraction import FeatureExtraction
+from xmalplus.FeatureExtractor.GetFeatureMatrix import GetFeatureMatrix
 
 
 class FeatureExtractor:

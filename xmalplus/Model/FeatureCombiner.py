@@ -1,10 +1,10 @@
 import torch
 import torch.nn as nn
 import numpy as np
-from Model.AttentionLayer import FullAttention, AttentionLayer
-from Model.Embed import DataEmbedding
+from xmalplus.Model.AttentionLayer import FullAttention, AttentionLayer
+from xmalplus.Model.Embed import DataEmbedding
 import torch.nn.functional as Function
-from configs import configs
+from xmalplus.configs import configs
 
 
 class FeatureCombiner(nn.Module):

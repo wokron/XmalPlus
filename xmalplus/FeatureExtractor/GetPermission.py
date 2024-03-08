@@ -6,7 +6,7 @@ from androguard.core.bytecodes.apk import APK
 import os
 
 sys.path.append("." + os.sep + 'Log')
-from Log.log import Log
+from xmalplus.Log.log import Log
 
 
 class GetPermission:

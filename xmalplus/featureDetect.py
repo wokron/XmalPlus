@@ -3,8 +3,8 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 import numpy as np
-from configs import configs
-from Model.Model import Model
+from xmalplus.configs import configs
+from xmalplus.Model.Model import Model
 
 
 class FeatureDetector:

@@ -3,7 +3,7 @@ import sys
 import os
 import pandas as pd
 sys.path.append("."+os.sep+'Log')
-from Log.log import Log
+from xmalplus.Log.log import Log
 
 class GetFeature:
 	"""init params"""

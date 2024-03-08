@@ -4,9 +4,9 @@ import os
 import logging
 import sys
 sys.path.append("."+os.sep+'GetFeature')
-from FeatureExtractor.GetFeature import GetFeature
+from xmalplus.FeatureExtractor.GetFeature import GetFeature
 sys.path.append("."+os.sep+'Log')
-from Log.log import Log
+from xmalplus.Log.log import Log
 import pandas as pd
 import threading
 import random

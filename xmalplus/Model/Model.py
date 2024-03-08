@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
-from Model.FeatureCombiner import FeatureCombiner
-from Model.FeatureReformer import FeatureReformer
-from configs import configs
+from xmalplus.Model.FeatureCombiner import FeatureCombiner
+from xmalplus.Model.FeatureReformer import FeatureReformer
+from xmalplus.configs import configs
 
 
 class Model(nn.Module):

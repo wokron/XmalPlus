@@ -4,11 +4,11 @@ import os
 import shutil
 from multiprocessing import Process, Manager, Lock
 import random
-from FeatureExtractor.GetAPI import GetAPI
-from FeatureExtractor.GetPermission import GetPermission
+from xmalplus.FeatureExtractor.GetAPI import GetAPI
+from xmalplus.FeatureExtractor.GetPermission import GetPermission
 
 sys.path.append("." + os.sep + 'Log')
-from Log.log import Log
+from xmalplus.Log.log import Log
 
 
 class FeatureExtraction:

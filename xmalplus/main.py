@@ -1,7 +1,7 @@
-from FeatureExtractor.FeatureExtractor import FeatureExtractor
-from featureDetect import FeatureDetector
-from FeatureEmbedding.embeddingProcesss import EmbeddingProcess
-from configs import configs
+from xmalplus.FeatureExtractor.FeatureExtractor import FeatureExtractor
+from xmalplus.featureDetect import FeatureDetector
+from xmalplus.FeatureEmbedding.embeddingProcesss import EmbeddingProcess
+from xmalplus.configs import configs
 import numpy as np
 
 
@@ -26,5 +26,5 @@ class Exp:
 
 if __name__ == '__main__':
     exp = Exp()
-    exp.main(r"./Data", "2号人事部.apk")  # Pos Example
-    exp.main(r"./Data", "06eb19d137ff0a0ccd778b236e8d45c3b9b078115b2ed69baf06aee0244980c1.apk")  # Neg Example
+    # exp.main(r"./Data", "2号人事部.apk")  # Pos Example
+    # exp.main(r"./Data", "06eb19d137ff0a0ccd778b236e8d45c3b9b078115b2ed69baf06aee0244980c1.apk")  # Neg Example
