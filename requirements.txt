@@ -1,8 +1,5 @@
 pandas
-scikit-learn
-torchvision
 numpy
 matplotlib
-reformer_pytorch
-seaborn
+torch
 androguard==3.3.5
