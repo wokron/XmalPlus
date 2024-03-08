@@ -34,7 +34,7 @@ class FeatureDetector:
         with torch.no_grad():
             featureMetric = torch.from_numpy(featureMetric).to(configs.device).unsqueeze(0)
             pred_result = self.model(featureMetric).item()
-            prompt = ""
+            prompt = {}
             print(f"Result:{pred_result}")
             if pred_result > 0.5:
                 print("Begin Interprete Malware")
@@ -61,12 +61,10 @@ class FeatureDetector:
                         assistance.extend(top_assistance)
                     assistance = list(set(assistance))
                     self.cureAssistance.append(assistance)
-                prompt = self.generatePrompt()
+                prompt = self.generatePromptParams()
         return pred_result, prompt
 
-    def generatePrompt(self):
-        example = configs.Example
-        name = "test"
+    def generatePromptParams(self):
         feature1 = self.featureList[self.cureFeatures[0]]
         feature2 = self.featureList[self.cureFeatures[1]]
         feature3 = self.featureList[self.cureFeatures[2]]
@@ -75,23 +73,13 @@ class FeatureDetector:
         assistance2 = ", ".join([self.featureList[index] for index in self.cureAssistance[1]])
         assistance3 = ", ".join([self.featureList[index] for index in self.cureAssistance[2]])
         assistance4 = ", ".join([self.featureList[index] for index in self.cureAssistance[3]])
-        example = example.replace("Name", name)
-        example = example.replace("Feature1", feature1)
-        example = example.replace("Feature2", feature2)
-        example = example.replace("Feature3", feature3)
-        example = example.replace("Feature4", feature4)
-        example = example.replace("Assistance1", assistance1)
-        example = example.replace("Assistance2", assistance2)
-        example = example.replace("Assistance3", assistance3)
-        example = example.replace("Assistance4", assistance4)
-        return example
-
-
-
-
-
-
-
-
-
-
+        return {
+            "feature1": feature1,
+            "feature2": feature2,
+            "feature3": feature3,
+            "feature4": feature4,
+            "assistance1": assistance1,
+            "assistance2": assistance2,
+            "assistance3": assistance3,
+            "assistance4": assistance4,
+        }

@@ -7,11 +7,11 @@ class FeatureExtractor:
         self.featureExtraction = FeatureExtraction()
         self.getFeatureMatrix = GetFeatureMatrix()
 
-    def main(self, Datapath, Apk):
+    def run(self, Datapath, Apk):
         self.featureExtraction.getFeature(Datapath, Apk, Datapath)
         return self.getFeatureMatrix.getFeaturefromAPK(Datapath, Apk)
 
 
 if __name__ == '__main__':
     featureExtractor = FeatureExtractor()
-    print(featureExtractor.main(Datapath=r"../Data", Apk="2号人事部.apk"))
+    print(featureExtractor.run(Datapath=r"../Data", Apk="2号人事部.apk"))
