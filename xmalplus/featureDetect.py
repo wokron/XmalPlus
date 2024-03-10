@@ -24,7 +24,7 @@ class FeatureDetector:
         self.model_path = PACKAGE_ROOT / "modelParam/model_epoch_10.pth"
 
     def load_model(self):
-        self.model.load_state_dict(torch.load(self.model_path))
+        self.model.load_state_dict(torch.load(self.model_path, map_location=configs.device))
         self.model.eval()
 
     def pred_and_detect(self, featureMetric):
