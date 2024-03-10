@@ -22,6 +22,9 @@ class XmalPlus:
                 featureMetrix[i] = self.Adapter.name2numpy[
                     configs.cols_featureList[i].replace("/", "-").replace(">", "-")
                 ]
-        result, params = self.featureDetector.pred_and_detect(featureMetrix)
-        params["name"] = Apk
-        return result, params
+        result, key_features = self.featureDetector.pred_and_detect(featureMetrix)
+        return {
+            "apk_name": Apk,
+            "malware_score": result,
+            "key_features": key_features,
+        }
